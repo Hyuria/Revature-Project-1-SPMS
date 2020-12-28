@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- set up connection info -->
+        <property name="hibernate.connection.driver.class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://revature-training.cxxetslh1edl.us-east-2.rds.amazonaws.com:5432/postgres?currentSchema=online_publisher</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">qazwsxedc</property>
+
+        <!-- hibernate setup -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <!-- tell hibernate where to find our mappings -->
+        <mapping class="com.revature.beans.Approval"></mapping>
+        <mapping class = "com.revature.beans.Author"></mapping>
+        <mapping class = "com.revature.beans.Committee"></mapping>
+        <mapping class = "com.revature.beans.Editor"></mapping>
+        <mapping class = "com.revature.beans.EditorRole"></mapping>
+        <mapping class = "com.revature.beans.Genre"></mapping>
+        <mapping class = "com.revature.beans.Request"></mapping>
+        <mapping class = "com.revature.beans.Status"></mapping>
+        <mapping class = "com.revature.beans.Story"></mapping>
+        <mapping class = "com.revature.beans.StoryType"></mapping>
+        <mapping class = "com.revature.beans.User"></mapping>
+
+    </session-factory>
+</hibernate-configuration>
