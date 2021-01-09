@@ -1,4 +1,4 @@
-# SPMS
+# Story Pitch Management System (SPMS)
 Revature Project 1
 
 ## Project Description 
